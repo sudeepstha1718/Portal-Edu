@@ -1,0 +1,6 @@
+{
+  "name": "Student Project Submission Portal",
+  "description": "A frictionless web portal for students to submit project screenshots via copy-paste (Ctrl+V) or upload, and for teachers to view, search, download (automatically renamed with student details), and print submissions directly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

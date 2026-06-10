@@ -1,0 +1,43 @@
+{
+  "entities": {
+    "submission": {
+      "title": "Submission",
+      "description": "Student submission containing details and a compressed base64 screenshot",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The student's full name"
+        },
+        "projectName": {
+          "type": "string",
+          "description": "The name of the project"
+        },
+        "class": {
+          "type": "string",
+          "description": "The student's class section or grade"
+        },
+        "rollNo": {
+          "type": "string",
+          "description": "The student's roll or register number"
+        },
+        "screenshot": {
+          "type": "string",
+          "description": "Base64-encoded compressed JPEG screenshot data"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when the submission was recorded"
+        }
+      },
+      "required": ["name", "projectName", "class", "rollNo", "screenshot", "createdAt"]
+    }
+  },
+  "firestore": {
+    "submissions/{submissionId}": {
+      "schema": "submission",
+      "description": "All student project submissions"
+    }
+  }
+}
